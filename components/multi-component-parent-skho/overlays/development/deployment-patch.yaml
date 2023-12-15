@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-component-parent-skho
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-sfxb-tenant/build-suite-component-update-gctu/multi-component-parent-skho@sha256:5dc7e5903ccf0507024937b344583a6a9ef2209241f4ebb3d269ea3e7b23ac6a
+        name: container-image
+        resources: {}
+status: {}

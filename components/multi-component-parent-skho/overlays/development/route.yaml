@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multi-component-parent-skho
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multi-component-parent-skho
+    app.kubernetes.io/part-of: build-suite-component-update-gctu
+  name: multi-component-parent-skegih
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: multi-component-parent-skho
+    weight: 100
+status: {}
