@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: multi-component-parent-skho
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-appstudio-qe/build-e2e-sfxb-tenant/build-suite-component-update-gctu/multi-component-parent-skho@sha256:5dc7e5903ccf0507024937b344583a6a9ef2209241f4ebb3d269ea3e7b23ac6a
         imagePullPolicy: Always
         name: container-image
         ports:
